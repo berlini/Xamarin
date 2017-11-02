@@ -38,6 +38,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Global\Command.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -47,8 +48,8 @@
     <Compile Include="View\AlunoView.xaml.cs">
       <DependentUpon>AlunoView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\NovoAlunoViewxaml.xaml.cs">
-      <DependentUpon>NovoAlunoViewxaml.xaml</DependentUpon>
+    <Compile Include="View\NovoAlunoView.xaml.cs">
+      <DependentUpon>NovoAlunoView.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -82,7 +83,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="View\NovoAlunoViewxaml.xaml">
+    <EmbeddedResource Include="View\NovoAlunoView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

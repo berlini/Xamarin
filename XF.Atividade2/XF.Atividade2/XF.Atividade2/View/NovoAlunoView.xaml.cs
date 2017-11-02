@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace XF.Atividade2.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class NovoAlunoViewxaml : ContentPage
+    public partial class NovoAlunoView : ContentPage
     {
-        public NovoAlunoViewxaml()
+        public NovoAlunoView()
         {
             InitializeComponent();
         }

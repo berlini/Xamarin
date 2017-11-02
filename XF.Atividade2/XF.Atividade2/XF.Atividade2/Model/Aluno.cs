@@ -12,5 +12,10 @@ namespace XF.Atividade2.Model
         public string RM { get; set; }
         public string Nome { get; set; }
         public string Email { get; set; }
+
+        public Aluno()
+        {
+            Id = new Guid();
+        }
     }
 }
