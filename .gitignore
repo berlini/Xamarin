@@ -3,3 +3,9 @@
 ################################################################################
 
 *.suo
+/.vs
+/XF.Atividade1/.vs/XF.Atividade1/v15/Server/sqlite3
+/XF.Atividade1/XF.Atividade1/XF.Atividade1/obj/Debug
+/XF.Atividade1/XF.Atividade1/XF.Atividade1.Android/obj/Debug
+/XF.Atividade1/XF.Atividade1/XF.Atividade1.iOS/obj
+/XF.Atividade1/XF.Atividade1/XF.Atividade1.UWP/obj/x86/Debug
