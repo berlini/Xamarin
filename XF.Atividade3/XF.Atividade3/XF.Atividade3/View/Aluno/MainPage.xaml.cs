@@ -13,31 +13,18 @@ namespace XF.Atividade3.View.Aluno
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class MainPage : ContentPage
 	{
-        AlunoViewModel vmAluno;
-
         public MainPage ()
 		{
-            vmAluno = new AlunoViewModel();
-            BindingContext = vmAluno;
+            BindingContext = new AlunoViewModel();
+
             InitializeComponent();
         }
 
         protected override void OnAppearing()
         {
-            vmAluno = new AlunoViewModel();
-            BindingContext = vmAluno;
+            BindingContext = new AlunoViewModel();
+
             base.OnAppearing();
-        }
-
-        private void OnNovo(object sender, EventArgs args)
-        {
-            Navigation.PushAsync(new NovoAlunoView());
-        }
-
-        private void OnAlunoTapped(object sender, ItemTappedEventArgs args)
-        {
-            var selecionado = args.Item as Model.Aluno;
-            DisplayAlert("Aluno selecionado", "Aluno: " + selecionado.Id, "OK");
         }
     }
 }
