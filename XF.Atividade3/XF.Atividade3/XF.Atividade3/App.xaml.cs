@@ -4,31 +4,31 @@ using System.Linq;
 using System.Text;
 
 using Xamarin.Forms;
+using XF.Atividade3.Model;
 
 namespace XF.Atividade3
 {
-	public partial class App : Application
-	{
-		public App ()
-		{
-			InitializeComponent();
+    public partial class App : Application
+    {
+        public App()
+        {
+            InitializeComponent();
 
-			MainPage = new XF.Atividade3.MainPage();
-		}
+            MainPage = new NavigationPage(new View.Aluno.MainPage());
+        }
 
-		protected override void OnStart ()
-		{
-			// Handle when your app starts
-		}
+        static Aluno alunoModel;
+        public static Aluno AlunoModel
+        {
+            get
+            {
+                if (alunoModel == null)
+                {
+                    alunoModel = new Aluno();
+                }
+                return alunoModel;
+            }
 
-		protected override void OnSleep ()
-		{
-			// Handle when your app sleeps
-		}
-
-		protected override void OnResume ()
-		{
-			// Handle when your app resumes
-		}
-	}
+        }
+    }
 }
