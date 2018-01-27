@@ -14,7 +14,7 @@ namespace XF.Atividade3
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new View.Aluno.MainPage());
+            MainPage = new NavigationPage(new View.Login.LoginView());
         }
 
         static Aluno alunoModel;
